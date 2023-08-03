@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chown new_owner:new_group filename
+sudo chown betty hello
