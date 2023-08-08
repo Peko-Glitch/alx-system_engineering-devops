@@ -1,2 +1,2 @@
 #!/bin/bash
-#!/bin/bash; encode_rot13() { echo "$1" | tr 'A-Za-z' 'N-ZA-Mn-za-m'; }; decode_rot13() { encode_rot13 "$1"; }; if [ "$1" == "encode" ]; then shift; encoded=$(encode_rot13 "$@"); echo "Encoded: $encoded"; elif [ "$1" == "decode" ]; then shift; decoded=$(decode_rot13 "$@"); echo "Decoded: $decoded"; else echo "Usage: $0 [encode|decode] text"; fi
+encode_rot13() { echo "$1" | tr 'A-Za-z' 'N-ZA-Mn-za-m'; }; decode_rot13() { encode_rot13 "$1"; }; if [ "$1" == "encode" ]; then shift; encoded=$(encode_rot13 "$@"); echo "Encoded: $encoded"; elif [ "$1" == "decode" ]; then shift; decoded=$(decode_rot13 "$@"); echo "Decoded: $decoded"; else echo "Usage: $0 [encode|decode] text"; fi
