@@ -1,2 +1,2 @@
 #!/bin/bash
-if [ "$1" = "encode" -a $# -eq 2 ]; then echo "$2" | tr 'A-Za-z' 'N-ZA-Mn-za-m'; elif [ "$1" = "decode" -a $# -eq 2 ]; then echo "$2" | tr 'N-ZA-Mn-za-m' 'A-Za-z'; else echo "Usage: $0 [encode|decode] text"; fi
+tr 'A-Za-z' 'N-ZA-Mn-za-m'
